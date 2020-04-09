@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>goto dialog 测试页面</title>
+  <link rel="stylesheet" href="dlg-goto.css">
+</head>
+<body>
+  <!-- <div class="notepad-dlg-goto">
+      <div class="dialogbox">
+        <div class="titlebar">
+          <p class="title">转到指定行</p>
+          <span class="close-btn">✖</span>
+        </div>
+        <div class="main">
+          <label for="">行号(L)</label>
+          <br>
+          <input class='txt-line-num' autofocus type="text">
+          <br>
+          <input class='btn-goto' type="button" value="转到">
+          <input class='btn-cancel' type="button" value="取消">
+        </div>
+      </div>
+    </div> -->
+  <input type="button" id="popup" value="弹出对话框">
+  <hr>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+  <script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="dlg-goto.js"></script>
+  <script>
+    $(function(){
+      var $pop = $('#popup');
+       
+      $pop.click(function(){
+        $dlgGoto.show();
+      })
+    })
+  </script>
+</body>
+</html>
